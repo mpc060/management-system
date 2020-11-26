@@ -1,0 +1,22 @@
+<mat-toolbar class="app-title"></mat-toolbar>
+
+<div class="main-div">
+  <mat-card class="center width50" *ngIf="register" >
+    <form autocomplete="off" novalidate [formGroup]="register" (ngSubmit)="submit()" (ngReset)="restartForm()">
+      <mat-card-content>
+        <app-input-text title="Nome *" controlName="name" [formGroup]="register"></app-input-text>
+        <app-input-number title="Idade *" controlName="age" step="0.1" [formGroup]="register"></app-input-number>
+        <app-input-text title="Endereço *" controlName="address" [formGroup]="register"></app-input-text>
+        <app-input-text title="Cidade *" controlName="city" [formGroup]="register"></app-input-text>
+        <app-input-text title="País *" controlName="country" [formGroup]="register"></app-input-text>  
+        <app-input-date title="Data de Nascimento *" controlName="dateOfBirth" [formGroup]="register"></app-input-date>  
+        <app-input-select title="Principal Habilidade" [opcoes]="skills" controlName="skill" [formGroup]="register"></app-input-select>
+        <app-input-textarea title="Descrição" controlName="description" [formGroup]="register"></app-input-textarea>
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="submit" color="accent" mat-raised-button>Salvar</button>
+        <button type="reset" color="warn" mat-raised-button (click)="return()">Cancelar</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

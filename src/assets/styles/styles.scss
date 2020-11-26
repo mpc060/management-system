@@ -1,0 +1,61 @@
+@import 'themes';
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.center {
+  margin: 10px auto;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.float-left {
+  float: left;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.line-break {
+  white-space: pre-line;
+}
+
+.height_100 {
+    height: 100%;
+}
+
+.width_100 {
+    width: 100%;
+}

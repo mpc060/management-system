@@ -1,0 +1,21 @@
+mat-list {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  padding-top: 100px;
+  overflow-y: auto;
+  height: 70%;
+}
+
+mat-card {
+  display: grid;
+  justify-content: center;
+}   
+
+.mat-card-image {
+  margin-top: 20px;
+  width: 182px;
+  height: 150px;
+  margin: auto;
+  display: block;
+}

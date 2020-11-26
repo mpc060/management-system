@@ -1,0 +1,23 @@
+<mat-list *ngIf="person; else noRegister">
+  <img mat-card-image [src]="noPhoto" >
+  <mat-list-item> Nome: {{person.name}} </mat-list-item>
+  <mat-list-item> Idade: {{person.age}} </mat-list-item>
+  <mat-list-item> Cidade: {{person.city}} </mat-list-item>
+  <mat-list-item> País: {{person.country}} </mat-list-item>
+  <mat-list-item> Data de Nascimento: {{person.dateOfBirth | date: 'dd/MM/yyyy' }} </mat-list-item>
+  <mat-list-item> Principal Habilidade: {{person.skill}} </mat-list-item>
+  <mat-list-item> Descrição: {{person.description}} </mat-list-item>
+</mat-list>
+
+<mat-card>
+  <mat-card-actions>
+    <button color="accent" mat-raised-button (click)="edit()">Editar</button>
+    <button color="warn" mat-raised-button (click)="delete()">Excluir</button>
+    <button color="primary" mat-raised-button (click)="return()">Voltar</button>
+  </mat-card-actions>
+</mat-card>
+
+<ng-template #noRegister>
+  <h1 class="full-width main-div">Nenhum registro encontrado!</h1>
+</ng-template>
+  
